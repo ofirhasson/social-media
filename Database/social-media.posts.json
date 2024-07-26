@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "6694f09885298ce86b551fe4"
+  },
+  "userId": {
+    "$oid": "6694f04e85298ce86b551fdb"
+  },
+  "privacyOptions": "public",
+  "content": "ccccccc",
+  "imageNames": [
+    "0d3d9aa0-147b-47a1-83eb-e172674c4570.jpg"
+  ],
+  "likes": [],
+  "comments": [],
+  "createdAt": {
+    "$date": "2024-07-15T09:49:12.820Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-15T09:49:12.820Z"
+  }
+}]

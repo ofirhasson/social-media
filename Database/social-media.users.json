@@ -1,0 +1,79 @@
+[{
+  "_id": {
+    "$oid": "6694ef1db5f1e98d99a57044"
+  },
+  "userDetails": {
+    "firstName": "Ofir",
+    "lastName": "Hasson hay",
+    "email": "ofir@gmail.com",
+    "password": "571440993eee835205848d99f8de8ae0a80011cf451b09e71d79558d45234261e74fa74a4c2d71de9c4b1b47979a80748cf9d9483f67dde92e9c3ecd74313f36",
+    "roleId": 2,
+    "gender": "male",
+    "birthday": "19/04/2000"
+  },
+  "friendRequests": [],
+  "sentFriendRequests": [],
+  "friends": [
+    {
+      "$oid": "6694f04e85298ce86b551fdb"
+    }
+  ],
+  "postsAlbum": [],
+  "posts": [],
+  "likedProfileImage": [],
+  "likedCoverImage": [],
+  "likedPosts": [],
+  "likedComments": [],
+  "likedReplies": [],
+  "createdAt": {
+    "$date": "2024-07-15T09:42:53.247Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-15T09:55:44.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6694f04e85298ce86b551fdb"
+  },
+  "userDetails": {
+    "firstName": "Shlomi",
+    "lastName": "Cohen",
+    "email": "shlomi@gmail.com",
+    "password": "571440993eee835205848d99f8de8ae0a80011cf451b09e71d79558d45234261e74fa74a4c2d71de9c4b1b47979a80748cf9d9483f67dde92e9c3ecd74313f36",
+    "roleId": 2,
+    "gender": "male",
+    "birthday": "19/08/1999"
+  },
+  "friendRequests": [],
+  "sentFriendRequests": [],
+  "friends": [
+    {
+      "$oid": "6694ef1db5f1e98d99a57044"
+    }
+  ],
+  "profileAlbum": [],
+  "coverAlbum": [],
+  "postsAlbum": [
+    "0d3d9aa0-147b-47a1-83eb-e172674c4570.jpg"
+  ],
+  "posts": [
+    {
+      "$oid": "6694f05f85298ce86b551fde"
+    },
+    {
+      "$oid": "6694f09885298ce86b551fe4"
+    }
+  ],
+  "likedProfileImage": [],
+  "likedCoverImage": [],
+  "likedPosts": [],
+  "likedComments": [],
+  "likedReplies": [],
+  "createdAt": {
+    "$date": "2024-07-15T09:47:58.488Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-15T09:55:44.478Z"
+  }
+}]
