@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fde99693.css",
+    "main.js": "/static/js/main.b6ec319f.js",
+    "static/js/787.d271e5d9.chunk.js": "/static/js/787.d271e5d9.chunk.js",
+    "static/media/boxicons.svg": "/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/boxicons.eot": "/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
+    "static/media/boxicons.woff": "/static/media/boxicons.d12afc36557395143e4b.woff",
+    "static/media/boxicons.ttf": "/static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/Keller-Williams.jpg": "/static/media/Keller-Williams.12afb4ae97d5aea3a108.jpg",
+    "static/media/boxicons.woff2": "/static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "static/media/Memories.png": "/static/media/Memories.21d53001594d7843945f.png",
+    "static/media/Facebook-Page.png": "/static/media/Facebook-Page.2f6f0ff3c8ccbb24a7ed.png",
+    "static/media/Facebook-Friend_bg_removed_bg_removed.png": "/static/media/Facebook-Friend_bg_removed_bg_removed.e05657d5b4e66a1204c5.png",
+    "static/media/FacebookLogo.png": "/static/media/FacebookLogo.d74dfea001a72ababf5d.png",
+    "static/media/Facebook_Logo_2023.png": "/static/media/Facebook_Logo_2023.4f51fc0c180e4fb1f6b9.png",
+    "static/media/facebook-groups.png": "/static/media/facebook-groups.d5ead6e5fe542635cbed.png",
+    "static/media/js-logo.png": "/static/media/js-logo.5343fedffdd2db3ac073.png",
+    "static/media/kisspng-adidas-logo-tee-girls-adidas-logo.webp": "/static/media/kisspng-adidas-logo-tee-girls-adidas-logo.f6164d1df93e02ce5146.webp",
+    "static/media/1-nike-logo-evolution.webp": "/static/media/1-nike-logo-evolution.fc3cebaa8c7de963d480.webp",
+    "index.html": "/index.html",
+    "main.fde99693.css.map": "/static/css/main.fde99693.css.map",
+    "main.b6ec319f.js.map": "/static/js/main.b6ec319f.js.map",
+    "787.d271e5d9.chunk.js.map": "/static/js/787.d271e5d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fde99693.css",
+    "static/js/main.b6ec319f.js"
+  ]
+}
