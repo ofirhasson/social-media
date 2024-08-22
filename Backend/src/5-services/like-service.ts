@@ -82,7 +82,7 @@ class LikeService {
         const existingLike = await LikeModel.findById(_id);
 
         if (!existingLike) {
-            throw new ResourceNotFoundError("Like not found");
+            throw new ResourceNotFoundError("Like not exist");
         }
 
         if (
