@@ -26,7 +26,6 @@ class PostsService {
             `${appConfig.postsUrl}target`,
             { params }
         );
-        console.log(response.data);
         
         const postsMap = new Map<string, PostModel>(
             Object.entries(response.data).map(([key, value]) =>
