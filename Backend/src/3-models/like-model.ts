@@ -1,10 +1,11 @@
-import mongoose, { Document, Schema, model } from "mongoose";
+import mongoose, { Document, Schema, Types, model } from "mongoose";
 import { LikeTarget } from "./enums";
 
 export interface ILikeModel extends Document {
   userId: mongoose.Schema.Types.ObjectId;
-  targetId: mongoose.Schema.Types.ObjectId;
+  targetId: Types.ObjectId;
   targetType: LikeTarget;
+  isLiked: boolean
 }
 
 export const LikeSchema = new Schema<ILikeModel>(

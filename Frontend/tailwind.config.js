@@ -12,14 +12,20 @@ module.exports = {
         "dark-txt": "#B8BBBF",
       },
 
+      maxWidth: {
+        'lg' : '45rem'
+      },
+
       width: {
         78: `19rem`,
         74: "17.875rem",
         100: "416px",
-        130: "783px"
+        130: "783px",
       },
       height: {
         13: "3.25rem",
+        17: "4.2rem",
+        "110": "27rem"
       },
       screens: {
         xs: "375px",
@@ -28,6 +34,10 @@ module.exports = {
         "lg-1000": "1000px",
         "lg-1024": "1024px",
         maxWLg: {'max': '1100px'},
+        maxWLgg: {'max': '1500px'},
+        minWLgg: '1501',
+        maxXs: {'max': '630px'},
+        maxMd: {'max': '768px'},
         lgg: "1100px",
         lggg: "2200px",
       },

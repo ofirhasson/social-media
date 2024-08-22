@@ -1,43 +1,21 @@
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import { useRouting } from "./hooks/useRouting";
 import { Login } from "../../Pages/LoginArea/Login/Login";
-import { Register } from "../../Pages/RegisterArea/Register/Register";
-import "./Routing.css";
 import { Layout } from "../Layout/Layout";
-import { useAppSelector } from "../../../Redux/Store";
-import { useEffect } from "react";
+import { Register } from "../../Pages/RegisterArea/Register/Register";
+import { memo } from "react";
 
-export function Routing(): JSX.Element {
-  const userId = useAppSelector((state) => state.auth?._id);
-
-  //   const isLogin = userId ?  <Layout /> : <Login />;
-
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    // Redirect to login if userId is not present and trying to access protected routes
-    if (!userId) {
-      if (window.location.pathname === "/home") {
-        navigate("/login");
-      }
-    //   navigate("/register");
-    }
-  }, [userId, navigate]);
-
-  const routes = [
-    { path: "/login", element: <Login /> },
-    { path: "/register", element: <Register /> },
-    { path: "/home", element: userId ? <Layout /> : <Login /> || <Register /> },
-    { path: "/", element: <Login /> },
-    { path: "*", element: <Layout /> },
-  ];
-
+ function RoutingComponent(): JSX.Element {
+  const { routes } = useRouting({ Login: <Login />, Layout: <Layout />, Register: <Register /> });
   return (
-    <div className="h-full">
+    <div className="h-full bg-gray-300 w-full">
       <Routes>
-        {routes.map((route, index) => (
-          <Route key={index} path={route.path} element={route.element} />
+        {routes?.map((route, index) => (
+          <Route key={index} path={route?.path} element={route?.element} />
         ))}
       </Routes>
     </div>
   );
 }
+
+export const Routing = memo(RoutingComponent)

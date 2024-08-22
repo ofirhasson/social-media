@@ -1,3 +1,5 @@
+import { populate } from "dotenv";
+
 export const getPopulatedSpecialFieldsUserService = [
   {
     path: "likedPosts",
@@ -157,3 +159,52 @@ export const specialPopulatedFieldsPostService = [
     },
   },
 ];
+
+export const specialPopulatedFieldsCommentService = [
+  {
+    path: "replies",
+    populate: {
+      path: "userId",
+      select:
+        "userDetails.firstName userDetails.lastName profileImage coverImage",
+    },
+  },
+
+  {
+    path: "likes",
+    populate: {
+        path: "userId",
+        select: "userDetails.firstName userDetails.lastName profileImage coverImage"
+    }
+  },
+
+  {
+    path: "userId",
+    select:
+      "userDetails.firstName userDetails.lastName profileImage coverImage",
+  },
+];
+
+export const specialPopulatedFieldsReplyService = [
+  {
+    path: "userId",
+    select:
+      "userDetails.firstName userDetails.lastName profileImage coverImage",
+  },
+  {
+    path: "likes",
+    populate: {
+        path: "userId",
+        select: "userDetails.firstName userDetails.lastName profileImage coverImage"
+    }
+  }
+];
+
+export const specialPopulatedFieldsLikeService = [
+    {
+      path: "userId",
+      select:
+        "userDetails.firstName userDetails.lastName profileImage coverImage",
+    },
+   
+  ];

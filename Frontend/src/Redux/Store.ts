@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { authReducersContainer } from "./AuthSlice";
-import { userReducersContainer } from "./UserSlice";
-import { postReducersContainer } from "./PostSlice";
+import { authReducersContainer } from "./Slices/AuthSlice";
+// import { userReducersContainer } from "./Slices/UsersSlice";
+// import { postReducersContainer } from "./Slices/PostsSlice";
 import { TypedUseSelectorHook, useSelector } from "react-redux";
 import { AppState } from "./AppState";
-import { commentReducersContainer } from "./CommentsSlice";
+// import { commentReducersContainer } from "./CommentsSlice";
 
 // This line initializes the Redux store using the configureStore function, which is provided by the Redux Toolkit.
 export const appStore = configureStore({
@@ -14,14 +14,39 @@ export const appStore = configureStore({
     auth: authReducersContainer,
 
     // user is a slice of the state managed by the `userReducersContainer` reducer.
-    users: userReducersContainer,
+    // users: userReducersContainer,
 
-    posts: postReducersContainer,
+    // posts: postReducersContainer,
 
-    comments: commentReducersContainer
+ 
   },
 });
 
 // export type AppDispatch = typeof appStore.dispatch;
 
+// const selectPosts = (state: AppState) => state.posts;
+
+// export const selectPostById = createSelector(
+//     [selectPosts, (state, postId) => postId],
+//     (posts, postId) => posts.find(post => post._id === postId)
+// );
+
+// export const selectCommentsByPostId = createSelector(
+//     [selectPostById],
+//     (post) => post ? post.comments : []
+// );
+
+// export const selectRepliesByPostId = createSelector(
+//     [selectPostById],
+//     (post) => post 
+//         ? post.comments.flatMap(comment => comment.replies) 
+//         : []
+// );
+
+
+
+
+
 export const useAppSelector: TypedUseSelectorHook<AppState> = useSelector;
+
+

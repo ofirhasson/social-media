@@ -1,13 +1,12 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-
-import "./index.css";
-import reportWebVitals from "./reportWebVitals";
-import { Layout } from "./Components/LayoutArea/Layout/Layout";
-import { interceptors } from "./Utils/Interceptors";
 import { Provider } from "react-redux";
-import { appStore } from "./Redux/Store";
 import { Routing } from "./Components/LayoutArea/Routing/Routing";
+import "./index.css";
+import { appStore } from "./Redux/Store";
+import reportWebVitals from "./reportWebVitals";
+import { interceptors } from "./Utils/Interceptors";
+
 
 interceptors.listen();
 
@@ -16,8 +15,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-    <Provider store={appStore}>
-      <Routing/>
+    <Provider store={appStore}>  
+      <Routing/>  
     </Provider>
   </BrowserRouter>
 );

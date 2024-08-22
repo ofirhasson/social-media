@@ -4,7 +4,7 @@ import axios from "axios";
 import { appConfig } from "../Utils/AppConfig";
 import { CredentialsModel } from "../Models/CredentialsModel";
 import { appStore } from "../Redux/Store";
-import { authActionCreators } from "../Redux/AuthSlice";
+import { authActionCreators } from "../Redux/Slices/AuthSlice";
 
 class AuthService {
 

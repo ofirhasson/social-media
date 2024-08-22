@@ -16,13 +16,11 @@ export function RegisterForm(): JSX.Element {
     setValue,
     methods,
   } = useRegisterForm();
- 
+
   return (
     <div className="RegisterForm">
       <FormProvider {...methods}>
         <GenericForm
-          buttonName="Register"
-          header="Register"
           submit={handleSubmit(registerUser)}
           inputs={[
             <StringInput<UserModel>
@@ -71,7 +69,11 @@ export function RegisterForm(): JSX.Element {
               ]}
               setValue={setValue}
             />,
-            <button onClick={navigateToLogin}>Login</button>,
+            <div className="flex justify-center">
+              <button className="w-52 h-8 bg-green-500 text-white rounded" type="submit">
+                Register
+              </button>
+            </div>
           ]}
         />
       </FormProvider>

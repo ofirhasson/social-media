@@ -4,7 +4,6 @@ import { UserModel } from "../Models/UserModel";
 
 export type AppState = {
   auth: UserModel;
-  users: UserModel[];
-  posts: PostModel[];
-  comments:CommentModel[]
+//   users: Map<string, UserModel>;
+//   posts: PostModel[];
 };

@@ -20,7 +20,7 @@ export function StringInput<T>({
     <>
       <label className="text-left">{label}</label>
       <input
-          
+          className="border-2 h-12 border-gray-400 rounded-xl"
         name={name}
         type={type}
         {...register(registerName as unknown as Path<T>)}

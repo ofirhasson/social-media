@@ -4,15 +4,16 @@ import { LikeModel } from "./LikeModel";
 import { UserModel } from "./UserModel";
 
 export class PostModel {
-  _id:string  
-  userId: UserModel;
-  targetUserId: string;
-  privacyOptions: PrivacyOptions;
-  content: string;
-  imageNames: string[];
-  photosUrl: string[]
-  images: FileList
-  likes: LikeModel[];
-  comments: CommentModel[];
-  created:string
+    _id: string
+    userId: UserModel;
+    targetUserId: string;
+    privacyOptions: PrivacyOptions;
+    content: string;
+    imageNames: string[];
+    photosUrl: string[]
+    images: FileList
+    likes: Map<string, LikeModel>;
+    comments: Map<string, CommentModel>;
+    created: string
+
 }
