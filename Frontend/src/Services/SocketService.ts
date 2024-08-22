@@ -5,7 +5,7 @@ class SocketService {
 
   public connect(): void {
     if (!this.socket) {
-      this.socket = io("http://localhost:4000");
+      this.socket = io(process.env.REACT_APP_BACKEND_URL);
 
       this.socket.on("connect", () => {
         console.log("Connected to WebSocket server");
